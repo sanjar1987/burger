@@ -1,0 +1,404 @@
+@import 'fonts.css';
+@import 'all.min.css';
+
+:root {
+    --ral900: 'Raleway-ExtraBold';
+    --ral700: 'Raleway-Bold';
+    --ral500: 'Raleway-Medium';
+    --ral400: 'Raleway-Regular';
+    --ral100: 'Raleway-Thin';
+    --rob700: 'Roboto-Bold';
+    --rob500: 'Roboto-Medium';
+    --rob400: 'Roboto-Regular';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*  */
+.header {
+    background-color: #000000;
+    position: relative;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    /* z-index: 39; */
+    overflow: hidden;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+.down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon p {
+    font-size: 16px;
+    font-family: var(--rob400);
+}
+
+.up i {
+    color: white;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.up ul {
+    display: flex;
+    list-style: none;
+}
+
+.up__link {
+    font-family: var(--rob400);
+}
+
+.up li {
+    padding: 21px 0 19px 20px;
+}
+
+.dash {
+    height: 0.1px;
+    width: 100%;
+    background-color: rgb(112, 110, 110);
+    bottom: 0;
+}
+
+
+
+.bars{
+    color: white;
+    font-size: 20px;   
+}
+
+#inp{
+     display: none;
+}
+
+.label{
+    display: none;
+}
+
+.down__logo {
+    width: 216px;
+    height: 53px;
+    background: rgba(10, 148, 24, 0.75);
+    border: 4px solid #06600F;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.down__logo h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    font-family: var(--rob700);
+}
+
+.down ul {
+    display: flex;
+    list-style: none;
+}
+
+.down__list {
+    font-size: 18px;
+    font-weight: 400px;
+    padding: 22px 14px;
+    transition: 0.5s;
+    font-family: var(--ral500);
+}
+
+.down__list:hover {
+    background-color: #69CF17;
+}
+
+
+.menu {
+    background-image: url(../img/burger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 48px;
+}
+
+.hamburger h1 {
+    font-size: 72px;
+    font-family: var(--ral900);
+    color: #69CF17;
+    line-height: 84px;
+    padding-top: 167px;
+}
+
+.hamburger h3 {
+    color: #69CF17;
+    font-family: var(--ral400);
+    font-size: 36px;
+    padding-top: 18px;
+}
+
+.hamburger p {
+    color: white;
+    font-size: 18px;
+    font-family: var(--ral100);
+    padding-top: 18px;
+    padding-bottom: 30px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 179px;
+}
+
+.price__1 {
+    height: 103px;
+    width: 285px;
+    background: rgba(105, 207, 23, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.price__1 p {
+    font-size: 50px;
+    color: white;
+    font-family: var(--ral100);
+}
+
+.butt {
+    width: 255px;
+    height: 51px;
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.butt a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.butt p {
+    font-size: 18px;
+    font-family: var(--ral400);
+    color: white;
+}
+
+.main__menu1 {
+    background: #292929;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main__link {
+    width: 1600px;
+    padding: 0 15px;
+
+}
+
+.main__link li {
+    text-decoration: none;
+}
+
+.main__link ul {
+    display: flex;
+    list-style: none;
+}
+
+.link__a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--ral400);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 36px;
+}
+
+.link__a span {
+    padding: 21px 0;
+}
+
+.link__a::after {
+    content: '';
+    background-color: white;
+    width: 87px;
+    height: 2px;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.link__a:hover::after {
+    transform: scale(1);
+}
+
+.main {
+    margin-bottom: 50px;
+}
+
+.main__menu {
+    background: #393636;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.menu__list {
+    display: grid;
+    width: 1600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1f 1f;
+}
+
+.menu__list__info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 16px;
+    width: 370px;
+    height: 524px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background: #0C0C0C;
+    margin: 15px;
+}
+
+.info_img {
+    background-image: url(../img/burger2.png);
+    height: 325px;
+    width: 338px;
+}
+
+.info_color {
+    background: rgba(105, 207, 23, 0.9);
+    height: 325px;
+    width: 338px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 62px;
+    color: white;
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+.info_img:hover .info_color {
+    transform: scale(1);
+}
+
+.menu__list__info h3 {
+    font-family: var(--ral700);
+    font-size: 19px;
+    color: white;
+    margin: 15px 0;
+}
+
+.menu__list__info p {
+    font-family: var(--ral400);
+    font-size: 19px;
+    color: white;
+}
+
+.map {
+    text-align: center;
+    background-color: white;
+    
+}
+.frame{
+    height: 500px;
+}
+
+.map h2 {
+    color: #69CF17;
+    font-family: var(--ral700);
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    background: linear-gradient(180deg, #000000 0%, rgba(105, 207, 23, 0.5) 100%);
+}
+
+.footer__down {
+    background: #1A3406;
+}
+
+.footer__one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer__one a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--rob700);
+    font-size: 20px;
+}
+
+.footer__up ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 81px;
+    padding-bottom: 81px;
+}
+
+.footer__up a {
+    text-decoration: none;
+    font-size: var(--rob400);
+    font-size: 20px;
+    margin: 10px;
+    color: white;
+}
+
+.footer_down {
+    text-align: center;
+}
+
+.footer_down p {
+    color: white;
+    font-family: var(--rob400);
+    font-size: 16px;
+    padding: 19px 0;
+}
